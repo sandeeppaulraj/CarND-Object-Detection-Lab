@@ -12,6 +12,23 @@ In lab this you will:
 
 Open the notebook and work through it!
 
+### Download Models
+
+Download the required modesl from the following location.
+
+[Tensorflow Model Download](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
+
+Download the models using the following commands.
+
+```sh
+wget http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz
+wget http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_2018_01_28.tar.gz
+wget http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_2018_01_28.tar.gz
+  299  ls
+```
+
+After downloading the tarballs, untar in the appropriate directory.
+
 ### Requirements
 
 Install environment with [Anaconda](https://www.continuum.io/downloads):
@@ -37,6 +54,31 @@ Particularly useful sections:
 
 https://conda.io/docs/using/envs.html#change-environments-activate-deactivate
 https://conda.io/docs/using/envs.html#remove-an-environment
+
+
+### Running on AWS.
+
+Use the AWS provided Deep Learning AMI.
+
+First activate the required environment among the various choices.
+I used **tensorflow_p36**.
+
+I issued the following command at the prompt.
+
+```sh
+source activate tensorflow_p36
+```
+
+I then installed moviepy and upgraded numpy.
+
+Alternatively install a new environment using the environment file **aws_env.yml**
+
+This can be done using the following command
+
+```sh
+conda env create -f aws_env.yml
+```
+
 
 ### Resources
 
